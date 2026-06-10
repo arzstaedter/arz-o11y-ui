@@ -1,0 +1,29 @@
+{
+  "name": "@arz/grafana-o11y-assistant-app",
+  "version": "0.0.1",
+  "description": "LibreChat-powered observability assistant for Grafana",
+  "author": "ARZ Team",
+  "license": "Apache-2.0",
+  "main": "dist/module.js",
+  "types": "dist/module.d.ts",
+  "scripts": {
+    "build": "grafana-toolkit plugin:build",
+    "dev": "grafana-toolkit plugin:dev",
+    "test": "grafana-toolkit plugin:test",
+    "sign": "grafana-toolkit plugin:sign"
+  },
+  "dependencies": {
+    "@grafana/data": "^11.0.0",
+    "@grafana/runtime": "^11.0.0",
+    "@emotion/css": "^11.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@grafana/create-plugin": "^5.25.3",
+    "@grafana/toolkit": "^11.0.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "typescript": "^5.0.0"
+  }
+}
