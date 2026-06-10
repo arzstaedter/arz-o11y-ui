@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/main/public/app/plugins/plugin.json.schema.json",
+  "type": "app",
+  "id": "arz-o11y-assistant-app",
+  "name": "ARZ O11y Assistant",
+  "version": "0.0.1",
+  "description": "LibreChat-powered observability assistant available in every dashboard",
+  "author": {
+    "name": "ARZ Team",
+    "url": "https://arz.example.com"
+  },
+  "homepage": "https://github.com/arzstaedter/arz-o11y-ui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arzstaedter/arz-o11y-ui"
+  },
+  "keywords": ["assistant", "observability", "chatbot", "librechat", "grafana-assistant"],
+  "backend": false,
+  "state": "alpha",
+  "requires": ">=10.0.0",
+  "extensions": [
+    {
+      "type": "component",
+      "name": "o11y-assistant-sidebar",
+      "component": "O11yAssistantSidebar",
+      "targets": ["grafana/extension-sidebar/v0-alpha"]
+    }
+  ]
+}
